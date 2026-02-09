@@ -118,3 +118,5 @@ docker run -p 8501:8501 pulsecheck-ai
 📚 **Docs** - [TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md)  
 🤝 **Contributing** - [CONTRIBUTING.md](CONTRIBUTING.md)  
 🐛 **Issues** - [GitHub Issues](https://github.com/yourusername/PulseCheckAI/issues)
+
+Feel free to check out other repo! ✨
