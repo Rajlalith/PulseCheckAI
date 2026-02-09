@@ -8,12 +8,12 @@ Monitor brand mentions, detect emotions, and gain actionable insights with AI-po
 
 ### ✨ What You Can Do
 
-✅ **Collect** real-time tweets from Twitter/X API v2  
-✅ **Analyze** sentiment with **89% accuracy**  
-✅ **Detect** 6+ emotions in real-time  
-✅ **Extract** trending topics automatically  
-✅ **Visualize** with interactive dashboards  
-✅ **Export** to CSV, JSON & reports  
+**Collect** real-time tweets from Twitter/X API v2  
+**Analyze** sentiment with **89% accuracy**  
+**Detect** 6+ emotions in real-time  
+**Extract** trending topics automatically  
+**Visualize** with interactive dashboards  
+**Export** to CSV, JSON & reports  
 
 ---
 
