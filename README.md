@@ -1,81 +1,93 @@
-# PulseCheck AI
+# 🎯 PulseCheck AI
 
-Real-time social media sentiment analysis & customer feedback intelligence platform using NLP.
+> Real-time social media sentiment analysis & customer feedback intelligence platform
 
-## Overview
+Monitor brand mentions, detect emotions, and gain actionable insights with AI-powered NLP analysis.
 
-- Collect real-time tweets from Twitter/X API v2
-- Analyze sentiment with 89% accuracy
-- Detect emotions (Joy, Sadness, Anger, Fear, Surprise, Love)
-- Extract trending topics via TF-IDF
-- Interactive Plotly dashboards
-- Export data (CSV, JSON)
+---
 
-## Tech Stack
+### ✨ What You Can Do
 
-- **Frontend**: Streamlit, Plotly
-- **ML/NLP**: Transformers (Hugging Face), PyTorch, scikit-learn, NLTK
-- **Data**: Pandas, NumPy
-- **Testing**: pytest
+✅ **Collect** real-time tweets from Twitter/X API v2  
+✅ **Analyze** sentiment with **89% accuracy**  
+✅ **Detect** 6+ emotions in real-time  
+✅ **Extract** trending topics automatically  
+✅ **Visualize** with interactive dashboards  
+✅ **Export** to CSV, JSON & reports  
 
-## Prerequisites
+---
+
+## 🛠️ Tech Stack
+
+| Category | Tools |
+|----------|-------|
+| 🎨 **Frontend** | Streamlit, Plotly |
+| 🤖 **ML/NLP** | Transformers, PyTorch, scikit-learn, NLTK |
+| 📊 **Data** | Pandas, NumPy |
+| ✔️ **Testing** | pytest |
+
+## 📋 Prerequisites
 
 - Python 3.9+
 - Twitter API v2 Bearer Token (optional - sample data available)
-- 4GB+ RAM
-- 3GB+ disk space
+- 4GB+ RAM  |  3GB+ disk space
 
-## Quick Start
+## 🚀 Quick Start
 
 ```bash
-# Clone
+# 1️⃣ Clone Repository
 git clone https://github.com/yourusername/PulseCheckAI.git
 cd PulseCheckAI
 
-# Setup
+# 2️⃣ Setup Environment
 python -m venv venv
 source venv/bin/activate
+
+# 3️⃣ Install Dependencies
 pip install -r requirements.txt
 
-# Configure
+# 4️⃣ Configure API (Optional)
 cp .env.example .env
 # Add TWITTER_BEARER_TOKEN to .env
 
-# Download NLTK data
+# 5️⃣ Download NLTK Data
 python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"
 
-# Run
+# 6️⃣ Launch Dashboard
 streamlit run app.py
 ```
 
-Access at `http://localhost:8501`
+🌐 Open http://localhost:8501
 
-## Usage
+## 📊 Dashboard Features
 
-### Dashboard Tabs
-- **Sentiment Overview**: Tweets count, sentiment distribution, scores
-- **Emotion Analysis**: Emotion frequency, sentiment heatmap
-- **Topic Modeling**: Top keywords and topics
-- **Trends Over Time**: Sentiment timeline and volume
-- **Export**: Download CSV, JSON, or reports
+| Tab | Features |
+|-----|----------|
+| 📈 **Sentiment Overview** | Total tweets, distribution pie chart, score histogram |
+| 😊 **Emotion Analysis** | Emotion frequency, sentiment heatmap |
+| 📝 **Topic Modeling** | Top keywords, trending topics |
+| ⏰ **Trends Over Time** | Sentiment timeline, volume tracking |
+| 💾 **Export** | Download CSV, JSON, text reports |
 
-### Sample Data Mode
-Enable in sidebar to test without API access
-
-## Testing
+## 🧪 Testing
 
 ```bash
+# Run all tests
 pytest tests/ -v
+
+# With coverage report
 pytest tests/ --cov=src --cov-report=html
 ```
 
-## Project Structure
+---
+
+## 📁 Project Structure
 
 ```
 src/
-├── twitter_collector.py      # Twitter API data collection
-├── sentiment_analyzer.py     # Sentiment & emotion analysis
-└── topic_modeler.py          # Topic extraction & modeling
+├── 🐦 twitter_collector.py      # Data collection
+├── 😊 sentiment_analyzer.py     # Sentiment & emotion
+└── 📝 topic_modeler.py          # Topics & keywords
 
 tests/
 ├── test_twitter_collector.py
@@ -83,32 +95,26 @@ tests/
 └── test_topic_modeler.py
 ```
 
-## Key APIs
+---
 
-**TwitterCollector** - Collect tweets or generate sample data
-**SentimentAnalyzer** - Analyze sentiment & detect emotions  
-**TopicModeler** - Extract keywords and trending topics
+## 🚀 Deployment
 
-## Deployment
-
+### 🏠 Local
 ```bash
-# Local
 streamlit run app.py
+```
 
-# Docker
+### 🐳 Docker
+```bash
 docker build -t pulsecheck-ai .
 docker run -p 8501:8501 pulsecheck-ai
 ```
 
-## License
+---
 
-MIT - see [LICENSE](LICENSE)
+## 📜 License & Links
 
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md)
-
-## Support
-
-- Issues: [GitHub Issues](https://github.com/yourusername/PulseCheckAI/issues)
-- Docs: [TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md)
+📄 **MIT License** - [View](LICENSE)  
+📚 **Docs** - [TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md)  
+🤝 **Contributing** - [CONTRIBUTING.md](CONTRIBUTING.md)  
+🐛 **Issues** - [GitHub Issues](https://github.com/yourusername/PulseCheckAI/issues)
